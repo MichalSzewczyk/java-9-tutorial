@@ -1,9 +1,11 @@
+import com.mszewczyk.tutorial.implemented.SampleSerializable;
+
 module first {
     // makes package accessible from modules that requires this module
-    exports com.mszewczyk.tutorial.modules.exported;
+    exports com.mszewczyk.tutorial.exported;
 
     // grants reflective access for specified package
-    opens com.mszewczyk.tutorial.modules.opened;
+    opens com.mszewczyk.tutorial.opened;
 
     // declares modules that this module requires
     requires java.base;
@@ -12,5 +14,5 @@ module first {
     uses java.util.Collection;
 
     // informs that the module provides implementation of interface with specified class
-    provides java.io.Serializable with com.mszewczyk.tutorial.modules.implemented.SampleSerializable;
+    provides java.io.Serializable with SampleSerializable;
 }

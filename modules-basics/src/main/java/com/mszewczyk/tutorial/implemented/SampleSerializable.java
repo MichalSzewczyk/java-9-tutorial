@@ -1,4 +1,4 @@
-package com.mszewczyk.tutorial.modules.implemented;
+package com.mszewczyk.tutorial.implemented;
 
 import java.io.Serializable;
 
