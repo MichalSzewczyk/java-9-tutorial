@@ -14,7 +14,7 @@ module first {
     requires java.base;
 
     // any module which depends on current module will have implicit dependence on required module
-    requires transitive java.compiler;
+    requires static java.compiler;
 
     // static makes dependence mandatory at compile-time but optional at runtime
     requires static java.instrument;
